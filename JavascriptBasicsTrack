@@ -1,5 +1,10 @@
+
+
+///Welcome to my 30 days of JavaScript exercises on LeetCode. I used this to review and get started on an easy path in Leetcode to get used to the process. 
+//Looking forward to doing more challenging problems soon! 
+
 /**
- * @return {Function} that returns "Hello World"
+ * 1. @return {Function} that returns "Hello World"
  */
 var createHelloWorld = function() {
     return function(...args) {
@@ -7,7 +12,7 @@ var createHelloWorld = function() {
     }
 };
 
-//Given an integer n, return a counter function. This counter function initially 
+//2. Given an integer n, return a counter function. This counter function initially 
 //returns n and then returns 1 more than the previous value every subsequent time
 // it is called (n, n + 1, n + 2, etc).
 
