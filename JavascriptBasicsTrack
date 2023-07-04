@@ -182,3 +182,17 @@ It took me a minute to realize why it wasn't passing the first one. Switch the o
 we're solving last function to first instead of the opposite. All tests pass. 
 */
 
+// 2703. Return Length of Arguments Passed
+
+//Write a function argumentsLength that returns the count of arguments passed to it.
+
+var argumentsLength = function(...args) {
+    return args.length;
+   };
+
+//Notes:
+
+//Well this one took less time to figure out than it took to type...
+
+
+
