@@ -258,5 +258,22 @@ var addTwoPromises = async function(promise1, promise2) {
 
 };
 
-//ah yes, promises, promises!! Straightforward.... if you remember how they work. Which I do, MOST days.
+//ah yes, promises, promises!! Straightforward.... if you remember how they work. Which I do ... most days.
+
+//2621. Sleep
+
+//Given a positive integer millis, write an asynchronous function that sleeps for millis milliseconds. It can resolve any value.
+
+let t = Date.now()
+  sleep(100).then(() => console.log(Date.now() - t)) 
+
+async function sleep(millis) {
+    await new Promise(resolve => setTimeout(resolve, millis));
+}
+
+/* Notes:
+ It's wild how not exactly precise setTimeout is in this case (sometimes expected output is exactly, sometimes it's plus one.) 
+I would also note that without the first part, the second part works but is consistently 1ms more. Both were accepted, as this is apparently within tolerance of the testing
+In the future I'll be reading up more on this imprecision because I find it curious. 
+*/
 
